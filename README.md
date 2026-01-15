@@ -11,4 +11,9 @@ Ruby : 3.1.2p20 (2022-04-12 revision 4491bb740a) [aarch64-linux]
 # 内容
 ### lib/my_array.rb
 線形構造の配列を、Rubyに組み込まれているArrayを模して自作しました。<br>
-また、作成した配列を操作するメソッド、配列要素を逆順ソートや偶数だけ削除といったものも作成しました。
+また、作成した配列を操作するメソッド、配列要素を逆順ソートや偶数だけ削除といったものも作成しました。<br>
+[Qiita記事](https://qiita.com/iheuko/items/ea4ac281477e24f0bb58)
+
+### lib/my_list.rb
+線形構造である単方向連結リストと、その基本操作メソッドを作成しました。<br>
+[Qiita記事](https://qiita.com/iheuko/items/d91a0da16cef34a6dc8e)
