@@ -17,3 +17,7 @@ Ruby : 3.1.2p20 (2022-04-12 revision 4491bb740a) [aarch64-linux]
 ### lib/my_list.rb
 線形構造である単方向連結リストと、その基本操作メソッドを作成しました。<br>
 [Qiita記事](https://qiita.com/iheuko/items/d91a0da16cef34a6dc8e)
+
+### lib/my_heap.rb
+木構造の一種であるヒープを作成しました。<br>
+[Qiita記事](https://qiita.com/iheuko/items/450d770cb4ea2e8fdb4c)
