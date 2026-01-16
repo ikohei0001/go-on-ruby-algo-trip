@@ -55,4 +55,15 @@ RSpec.describe MyHeap do
       expect(heap.extract_min).to eq(1)
     end
   end
+
+  describe "#insert" do
+    it "maintains the min heap property" do
+      heap.insert(10)
+      heap.insert(5)
+      heap.insert(20)
+      heap.insert(3)
+
+      expect(min_heap_property?(heap.heap)).to be true
+    end
+  end
 end
