@@ -21,3 +21,7 @@ Ruby : 3.1.2p20 (2022-04-12 revision 4491bb740a) [aarch64-linux]
 ### lib/my_heap.rb
 木構造の一種であるヒープを作成しました。<br>
 [Qiita記事](https://qiita.com/iheuko/items/450d770cb4ea2e8fdb4c)
+
+### lib/my_bst.rb
+木構造の一種である二分探索木(BST)を作成しました。<br>
+[Qiita記事](https://qiita.com/iheuko/items/18058f4649f04776bd20)
