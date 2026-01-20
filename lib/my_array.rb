@@ -4,9 +4,11 @@ class MyArray
     @size = 0
   end
   
-  def push(var)
-    @data[@size] = var
-    @size += 1
+  def push(*vars)
+    vars.each do |x|
+      @data[@size] = x
+      @size += 1
+    end
   end
   
   def get(index)
@@ -21,16 +23,18 @@ class MyArray
     @data[index] = var 
   end
   
-  def insert(index, var)
-    raise(ArgumentError, "存在する配列番号を指定してください") if index < 0 || index >= @size
-      
-    i = @size - 1
-    while i > index - 1 
-      @data[i + 1] = @data[i]
-      i = i - 1
+  def insert(index, *vars)
+    raise(ArgumentError, "Please specify an existing array index") if index < 0 || index > @size
+
+    (@size - 1).downto(index) do |i|
+      @data[i + vars.size] = @data[i]
     end
-    @data[index] = var
-    @size += 1
+
+    vars.each_with_index do |var, offset|
+      @data[index + offset] = var
+    end
+
+    @size += vars.size
   end
   
   def delete(index)
@@ -38,7 +42,7 @@ class MyArray
       
     value = @data[index]
     i = index
-    while i < @size
+    while i < @size - 1
       @data[i] = @data[i + 1]
       i = i + 1
     end
