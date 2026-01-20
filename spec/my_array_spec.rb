@@ -8,6 +8,15 @@ RSpec.describe MyArray do
       expect(array.get(0)).to eq(1)
       expect(array.size).to eq(1)
     end
+
+    it "push some values into the array" do
+      array = MyArray.new()
+      array.push(1, 2, 3)
+      expect(array.get(0)).to eq(1)
+      expect(array.get(1)).to eq(2)
+      expect(array.get(2)).to eq(3)
+      expect(array.size).to eq(3)
+    end
   end
 
   describe "#get" do
@@ -54,15 +63,15 @@ RSpec.describe MyArray do
 
   describe "#insert" do
     context "with valid index" do
-      it "inserts a value at the specified index" do
+      it "inserts some values at the specified index" do
         array = MyArray.new()
-        array.push(1)
-        array.push(2)
-        array.insert(1, 10)
-        expect(array.size).to eq(3)
+        array.push(1, 2)
+        array.insert(1, 10, 11)
+        expect(array.size).to eq(4)
         expect(array.get(0)).to eq(1)
         expect(array.get(1)).to eq(10)
-        expect(array.get(2)).to eq(2)
+        expect(array.get(2)).to eq(11)
+        expect(array.get(3)).to eq(2)
       end
     end
 
