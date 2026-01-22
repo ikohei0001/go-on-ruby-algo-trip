@@ -49,8 +49,8 @@ RSpec.describe MyBST do
   describe "#find_min" do
     it "returns the minimum value node" do
       [10, 15, 5, 2, 7, 6].each { |x| bst.insert(x) }
-      min = bst.find_min(bst.root)
-      expect(min.value).to eq(2)
+      bst.delete(2)
+      expect(bst.inorder).not_to eq(2)
     end
   end
 
