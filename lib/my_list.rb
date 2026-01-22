@@ -1,13 +1,13 @@
-class Node
-  attr_accessor :data, :next 
-
-    def initialize(value)
-      @data = value
-      @next = nil
-    end
-end
-
 class MyList
+  class Node
+    attr_accessor :data, :next 
+
+      def initialize(value)
+        @data = value
+        @next = nil
+      end
+  end
+
   attr_accessor :head
 
   def initialize(value = nil)
