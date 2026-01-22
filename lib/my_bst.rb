@@ -1,14 +1,14 @@
-class Node
-  attr_accessor :value, :left, :right
-
-  def initialize(value)
-    @value = value
-    @left = nil
-    @right = nil
-  end
-end
-
 class MyBST
+  class Node
+    attr_accessor :value, :left, :right
+
+    def initialize(value)
+      @value = value
+      @left = nil
+      @right = nil
+    end
+  end
+
   attr_accessor :root
 
   def initialize
@@ -18,6 +18,20 @@ class MyBST
   def search(value)
     search_rec(@root, value)
   end
+
+  def insert(value)
+    @root = insert_rec(@root, value)
+  end
+
+  def delete(value)
+    @root = delete_rec(@root, value)
+  end
+
+  def inorder
+    inorder_rec(@root)
+  end
+
+  private
 
   def search_rec(node, value)
     return false if node.nil?
@@ -30,10 +44,6 @@ class MyBST
     end
   end
 
-  def insert(value)
-    @root = insert_rec(@root, value)
-  end
-
   def insert_rec(node, value)
     return Node.new(value) if node.nil?
 
@@ -43,10 +53,6 @@ class MyBST
       node.right = insert_rec(node.right, value)
     end
     node
-  end
-
-  def delete(value)
-    @root = delete_rec(@root, value)
   end
 
   def delete_rec(node, value)
@@ -71,10 +77,6 @@ class MyBST
     min_larger_right = node
     min_larger_right = min_larger_right.left while min_larger_right.left
     min_larger_right
-  end
-
-  def inorder
-    inorder_rec(@root)
   end
 
   def inorder_rec(node)
