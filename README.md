@@ -29,3 +29,11 @@ Ruby : 3.1.2p20 (2022-04-12 revision 4491bb740a) [aarch64-linux]
 ### lib/my_trie.rb
 木構造の一種であるTrieを作成しました。<br>
 [Qiita記事](https://qiita.com/iheuko/items/1e37f5d695565bf56143)
+
+### lib/my_undirected_graph_list.rb
+グラフの一種である無向グラフを隣接リスト構造で作成しました。<br>
+[Qiita記事](https://qiita.com/iheuko/items/c6fc3b9f952f94647f2a)
+
+### lib/my_undirected_graph_matrix.rb
+グラフの一種である無向グラフを隣接行列構造で作成しました。<br>
+[Qiita記事](https://qiita.com/iheuko/items/c6fc3b9f952f94647f2a)
