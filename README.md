@@ -37,3 +37,7 @@ Ruby : 3.1.2p20 (2022-04-12 revision 4491bb740a) [aarch64-linux]
 ### lib/my_undirected_graph_matrix.rb
 グラフの一種である無向グラフを隣接行列構造で作成しました。<br>
 [Qiita記事](https://qiita.com/iheuko/items/c6fc3b9f952f94647f2a)
+
+### lib/my_set.rb
+集合を作成しました。<br>
+[Qiita記事](https://qiita.com/iheuko/items/550cb58064fdd6f204f5)
