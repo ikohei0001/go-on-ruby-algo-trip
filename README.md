@@ -41,3 +41,7 @@ Ruby : 3.1.2p20 (2022-04-12 revision 4491bb740a) [aarch64-linux]
 ### lib/my_set.rb
 集合を作成しました。<br>
 [Qiita記事](https://qiita.com/iheuko/items/550cb58064fdd6f204f5)
+
+### lib/my_hash.rb
+ハッシュテーブルを作成しました。<br>
+[Qiita記事](https://qiita.com/iheuko/items/aee1ce1492d6dd503eb7)
