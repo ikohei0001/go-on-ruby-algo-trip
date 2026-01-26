@@ -45,3 +45,11 @@ Ruby : 3.1.2p20 (2022-04-12 revision 4491bb740a) [aarch64-linux]
 ### lib/my_hash.rb
 ハッシュテーブルを作成しました。<br>
 [Qiita記事](https://qiita.com/iheuko/items/aee1ce1492d6dd503eb7)
+
+### lib/merge_sort.rb
+分割統治法の一種であるマージソートを作成しました。<br>
+[Qiita記事](https://qiita.com/iheuko/items/1dd03c00153f2c6b7497)
+
+### lib/merge_sort_by_bottom_up.rb
+分割統治法の一種であるマージソートを再起処理を使わず作成しました。<br>
+[Qiita記事](https://qiita.com/iheuko/items/1dd03c00153f2c6b7497)
