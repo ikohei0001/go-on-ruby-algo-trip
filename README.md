@@ -57,3 +57,7 @@ Ruby : 3.1.2p20 (2022-04-12 revision 4491bb740a) [aarch64-linux]
 ### lib/quick_sort.rb
 分割統治法の1種であるクイックソートを作成しました。<br>
 [Qiita記事](https://qiita.com/iheuko/items/3808b526427f9bd22998)
+
+### lib/bubble_sort.rb
+バブルソートを作成しました。<br>
+[Qiita記事](https://qiita.com/iheuko/items/c803c883c4ea730db376)
